@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="420dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="70dp"
+    android:layout_weight="6">
+
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="#fff345"
+        android:layout_width="340dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="40dp"
+        android:layout_marginLeft="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/suez_one"
+                android:text="Feedback"
+                android:textColor="#000000"
+                android:textSize="35dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="We are glad to have you here, we appreciate your feedback and will serve better."
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+
+                    <EditText
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Type your feedback here"
+                        android:paddingHorizontal="5dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="35dp"
+                        android:textSize="20dp">
+
+                    </EditText>
+
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/white"
+                android:elevation="5dp"
+                android:fontFamily="@font/suez_one"
+                android:text="Submit"
+                android:textSize="15dp">
+
+
+            </br.com.simplepass.loadingbutton.customViews.CircularProgressButton>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="30dp"
+                android:text="Thanks for Feedback!!!"
+                android:textColorHint="#000000"
+                android:textSize="16dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
