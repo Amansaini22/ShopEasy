@@ -22,14 +22,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="70sp"
                 android:layout_weight="2"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="40dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_chevron_left_black_24dp">
 
                 </ImageView>
@@ -37,8 +37,8 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center_vertical"
                     android:fontFamily="@font/suez_one"
                     android:text="Verification"
                     android:textColor="#000000"
@@ -56,15 +56,18 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="70dp">
+                    android:layout_marginTop="70dp"
+                    android:textColorHint="#696969"
+                    app:hintTextColor="@color/black"
+                    app:boxBackgroundColor="@color/darkgrey">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Type your phone number">
+                        android:hint="  Type your phone number"
+                        android:inputType="number">
 
                     </com.google.android.material.textfield.TextInputEditText>
                 </com.google.android.material.textfield.TextInputLayout>

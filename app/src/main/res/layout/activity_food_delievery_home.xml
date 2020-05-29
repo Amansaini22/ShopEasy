@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food_delievery_home"
+    android:background="@color/darkgrey"
+    android:fitsSystemWindows="true"
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="35sp"
+                android:layout_height="40sp"
+                android:src="@drawable/ic_menu_black_24dp">
+
+            </ImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Location"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="35sp"
+                android:src="@drawable/ic_person_black_24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="150dp">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="35sp"
+                android:src="@drawable/ic_shopping_cart_black_24dp"
+                android:scaleX="-1"
+                android:layout_gravity="center_vertical">
+
+            </ImageView>
+
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            android:backgroundTint="#c0c0c0">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="   Search for your thing"
+            android:drawableLeft="@drawable/ic_search_black_24dp">
+
+        </EditText>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="110dp"
+        android:fillViewport="true">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+
+           <LinearLayout
+               android:layout_width="100dp"
+               android:layout_height="120dp"
+               android:orientation="vertical"
+               android:layout_gravity="center_vertical">
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:cardCornerRadius="10dp">
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="90dp"
+                   android:src="@drawable/north_indian"/>
+
+           </androidx.cardview.widget.CardView>
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="North Indian"
+                   android:fontFamily="@font/bubblegum_sans"
+                   android:textSize="15sp"
+                   android:textColor="@color/black"
+                   android:layout_margin="5sp">
+
+               </com.google.android.material.textview.MaterialTextView>
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="100dp"
+               android:layout_height="120dp"
+               android:orientation="vertical"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="12dp">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="10dp">
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp"
+                       android:src="@drawable/south_indian"/>
+
+               </androidx.cardview.widget.CardView>
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="South Indian"
+                   android:fontFamily="@font/bubblegum_sans"
+                   android:textSize="15sp"
+                   android:textColor="@color/black"
+                   android:layout_margin="5sp">
+
+               </com.google.android.material.textview.MaterialTextView>
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="100dp"
+               android:layout_height="120dp"
+               android:orientation="vertical"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="12dp">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="10dp">
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp"
+                       android:src="@drawable/rasmalai"/>
+
+               </androidx.cardview.widget.CardView>
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Sweets"
+                   android:fontFamily="@font/bubblegum_sans"
+                   android:textSize="15sp"
+                   android:textColor="@color/black"
+                   android:layout_margin="5sp">
+
+               </com.google.android.material.textview.MaterialTextView>
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="100dp"
+               android:layout_height="120dp"
+               android:orientation="vertical"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="12dp">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="10dp">
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp"
+                       android:src="@drawable/pizza"/>
+
+               </androidx.cardview.widget.CardView>
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Pizza"
+                   android:fontFamily="@font/bubblegum_sans"
+                   android:textSize="15sp"
+                   android:textColor="@color/black"
+                   android:layout_margin="5sp">
+
+               </com.google.android.material.textview.MaterialTextView>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="100dp"
+               android:layout_height="120dp"
+               android:orientation="vertical"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="12dp">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="10dp">
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp"
+                       android:src="@drawable/biryani"/>
+
+               </androidx.cardview.widget.CardView>
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Biryani"
+                   android:fontFamily="@font/bubblegum_sans"
+                   android:textSize="15sp"
+                   android:textColor="@color/black"
+                   android:layout_margin="5sp">
+
+               </com.google.android.material.textview.MaterialTextView>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="100dp"
+               android:layout_height="120dp"
+               android:orientation="vertical"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="12dp">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="10dp">
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp"
+                       android:src="@drawable/fast_food"/>
+
+               </androidx.cardview.widget.CardView>
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Fast Food"
+                   android:fontFamily="@font/bubblegum_sans"
+                   android:textSize="15sp"
+                   android:textColor="@color/black"
+                   android:layout_margin="5sp">
+
+               </com.google.android.material.textview.MaterialTextView>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="100dp"
+               android:layout_height="120dp"
+               android:orientation="vertical"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="12dp">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="10dp">
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp"
+                       android:src="@drawable/bakery"/>
+
+               </androidx.cardview.widget.CardView>
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Bakery"
+                   android:fontFamily="@font/bubblegum_sans"
+                   android:textSize="15sp"
+                   android:textColor="@color/black"
+                   android:layout_margin="5sp">
+
+               </com.google.android.material.textview.MaterialTextView>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="100dp"
+               android:layout_height="120dp"
+               android:orientation="vertical"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="12dp">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="10dp">
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp"
+                       android:src="@drawable/rolls"/>
+
+               </androidx.cardview.widget.CardView>
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Rolls"
+                   android:fontFamily="@font/bubblegum_sans"
+                   android:textSize="15sp"
+                   android:textColor="@color/black"
+                   android:layout_margin="5sp">
+
+               </com.google.android.material.textview.MaterialTextView>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="100dp"
+               android:layout_height="120dp"
+               android:orientation="vertical"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="12dp">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="10dp">
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp"
+                       android:src="@drawable/icecream_and_shakes"/>
+               </androidx.cardview.widget.CardView>
+               <com.google.android.material.textview.MaterialTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="IceCream and Shakes"
+                   android:fontFamily="@font/bubblegum_sans"
+                   android:textSize="10sp"
+                   android:textColor="@color/black"
+                   android:layout_margin="5sp">
+
+               </com.google.android.material.textview.MaterialTextView>
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginTop="250dp"
+        android:padding="5dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

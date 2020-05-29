@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".food_carts"></activity>
+        <activity android:name=".your_orders" />
+        <activity android:name=".food_list" />
+        <activity android:name=".food_delievery_home" />
+        <activity android:name=".settings" />
+        <activity android:name=".cart" />
+        <activity android:name=".notification" />
+        <activity android:name=".edit_address" />
+        <activity android:name=".add_address" />
         <activity android:name=".address" />
         <activity android:name=".payment" />
         <activity android:name=".account" />

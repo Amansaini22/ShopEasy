@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="30dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#dcdcdc"
+        app:cardCornerRadius="15sp"
+        android:layout_margin="7sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="25dp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/suez_one">
+
+            </com.google.android.material.textview.MaterialTextView>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="address fetched from db"
+                android:layout_marginLeft="10sp"
+                android:textSize="18sp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20sp">
+                <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#fff345"
+                    android:layout_marginLeft="23sp"
+                    android:text="EDIT">
+
+                </br.com.simplepass.loadingbutton.customViews.CircularProgressButton>
+
+                <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#fff345"
+                    android:layout_marginLeft="50sp"
+                    android:text="REMOVE">
+
+                </br.com.simplepass.loadingbutton.customViews.CircularProgressButton>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -8,14 +8,12 @@
     android:background="@color/darkgrey"
     android:fitsSystemWindows="true"
     tools:context=".account">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="#fff345">
 
             <LinearLayout
                 android:layout_width="270dp"
@@ -48,405 +46,186 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="112dp"
                 android:layout_height="120dp"
-                android:src="@drawable/ic_info_black_24dp"
+                android:src="@drawable/profile"
                 android:layout_marginLeft="20dp">
 
             </de.hdodenhof.circleimageview.CircleImageView>
 
         </LinearLayout>
-        <view
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:layout_marginTop="15dp"
-            android:background="#2D2D2D">
 
-        </view>
-    </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp">
+        android:layout_marginTop="120dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:weightSum="10">
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
 
-                <LinearLayout
+
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="37dp"
-                        android:src="@drawable/ic_location_city_black_24dp">
-
-                    </ImageView>
+                    android:layout_height="70sp"
+                    android:backgroundTint="#dcdcdc"
+                    android:layout_marginTop="5dp"
+                    app:cardCornerRadius="8dp">
 
                     <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:text="Address"
-                        android:textColor="#ffd7"
-                        android:textSize="22dp">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="    Address"
+                        android:textSize="24sp"
+                        android:layout_margin="18dp"
+                        android:drawableLeft="@drawable/ic_location_city_black_24dp"
+                        android:drawableRight="@drawable/ic_chevron_right_black_24dp">
 
                     </com.google.android.material.textview.MaterialTextView>
+                </androidx.cardview.widget.CardView>
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="22dp"
-                        android:src="@drawable/ic_chevron_right_black_24dp">
 
-                    </ImageView>
-                </LinearLayout>
-
-                <view
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="10dp">
-
-                </view>
-            </LinearLayout>
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="70sp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="8dp">
 
-                <LinearLayout
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
+                    android:text="    Notifications"
+                    android:textSize="24sp"
+                    android:layout_margin="18dp"
+                    android:drawableLeft="@drawable/ic_notifications_none_black_24dp"
+                    android:drawableRight="@drawable/ic_chevron_right_black_24dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="37dp"
-                        android:src="@drawable/ic_notifications_none_black_24dp">
+                </com.google.android.material.textview.MaterialTextView>
+            </androidx.cardview.widget.CardView>
 
-                    </ImageView>
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:text="Notifications"
-                        android:textColor="#ffd7"
-                        android:textSize="22dp">
-
-                    </com.google.android.material.textview.MaterialTextView>
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="22dp"
-                        android:src="@drawable/ic_chevron_right_black_24dp">
-
-                    </ImageView>
-                </LinearLayout>
-
-                <view
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="10dp">
-
-                </view>
-            </LinearLayout>
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="70sp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="8dp">
 
-                <LinearLayout
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
+                    android:text="    Payments"
+                    android:textSize="24sp"
+                    android:layout_margin="18dp"
+                    android:drawableLeft="@drawable/ic_payment_black_24dp"
+                    android:drawableRight="@drawable/ic_chevron_right_black_24dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="37dp"
-                        android:src="@drawable/ic_payment_black_24dp">
-
-                    </ImageView>
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:text="Payments"
-                        android:textColor="#ffd7"
-                        android:textSize="22dp">
-
-                    </com.google.android.material.textview.MaterialTextView>
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="22dp"
-                        android:src="@drawable/ic_chevron_right_black_24dp">
-
-                    </ImageView>
-                </LinearLayout>
-
-                <view
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="10dp">
-
-                </view>
-            </LinearLayout>
-
-            <LinearLayout
+                </com.google.android.material.textview.MaterialTextView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="70sp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="8dp">
 
-                <LinearLayout
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
+                    android:text="    Settings"
+                    android:textSize="24sp"
+                    android:layout_margin="18dp"
+                    android:drawableLeft="@drawable/ic_settings_black_24dp"
+                    android:drawableRight="@drawable/ic_chevron_right_black_24dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="37dp"
-                        android:src="@drawable/ic_settings_black_24dp">
-
-                    </ImageView>
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:text="Settings"
-                        android:textColor="#ffd7"
-                        android:textSize="22dp">
-
-                    </com.google.android.material.textview.MaterialTextView>
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="22dp"
-                        android:src="@drawable/ic_chevron_right_black_24dp">
-
-                    </ImageView>
-                </LinearLayout>
-
-                <view
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="10dp">
-
-                </view>
-            </LinearLayout>
-            <LinearLayout
+                </com.google.android.material.textview.MaterialTextView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="70sp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="8dp">
 
-                <LinearLayout
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
+                    android:text="    About Us"
+                    android:textSize="24sp"
+                    android:layout_margin="18dp"
+                    android:drawableLeft="@drawable/ic_info_black_24dp"
+                    android:drawableRight="@drawable/ic_chevron_right_black_24dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="37dp"
-                        android:src="@drawable/ic_info_black_24dp">
-
-                    </ImageView>
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:text="About Us"
-                        android:textColor="#ffd7"
-                        android:textSize="22dp">
-
-                    </com.google.android.material.textview.MaterialTextView>
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="22dp"
-                        android:src="@drawable/ic_chevron_right_black_24dp">
-
-                    </ImageView>
-                </LinearLayout>
-
-                <view
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="10dp">
-
-                </view>
-            </LinearLayout>
-
-            <LinearLayout
+                </com.google.android.material.textview.MaterialTextView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="70sp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="8dp">
 
-                <LinearLayout
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
+                    android:text="    Send Feedback"
+                    android:textSize="24sp"
+                    android:layout_margin="18dp"
+                    android:drawableLeft="@drawable/ic_feedback_black_24dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="37dp"
-                        android:src="@drawable/ic_feedback_black_24dp">
-
-                    </ImageView>
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:text="Send Feedback"
-                        android:textColor="#ffd7"
-                        android:textSize="22dp">
-
-                    </com.google.android.material.textview.MaterialTextView>
-
-
-                </LinearLayout>
-
-                <view
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="10dp">
-
-                </view>
-            </LinearLayout>
-
-            <LinearLayout
+                </com.google.android.material.textview.MaterialTextView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="70sp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="8dp">
 
-                <LinearLayout
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
+                    android:text="    Rate Us"
+                    android:textSize="24sp"
+                    android:layout_margin="18dp"
+                    android:drawableLeft="@drawable/ic_star_half_black_24dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="37dp"
-                        android:src="@drawable/ic_star_half_black_24dp">
-
-                    </ImageView>
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:text="Rate Us"
-                        android:textColor="#ffd7"
-                        android:textSize="22dp">
-
-                    </com.google.android.material.textview.MaterialTextView>
-
-
-                </LinearLayout>
-
-                <view
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="10dp">
-
-                </view>
-            </LinearLayout>
-
-            <LinearLayout
+                </com.google.android.material.textview.MaterialTextView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="70sp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="8dp">
 
-                <LinearLayout
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
+                    android:text="    Logout"
+                    android:textSize="24sp"
+                    android:layout_margin="18dp"
+                    android:drawableLeft="@drawable/ic_assignment_return_black_24dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="37dp"
-                        android:src="@drawable/ic_assignment_return_black_24dp">
-
-                    </ImageView>
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:text="Logout"
-                        android:textColor="#ffd7"
-                        android:textSize="22dp">
-
-                    </com.google.android.material.textview.MaterialTextView>
-
-                </LinearLayout>
-
-                <view
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="10dp">
-
-                </view>
-            </LinearLayout>
-
-
-            <LinearLayout
+                </com.google.android.material.textview.MaterialTextView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="70sp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginBottom="30sp">
 
-                <LinearLayout
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
+                    android:text="    Sign up as Shopkeeper"
+                    android:textSize="24sp"
+                    android:layout_margin="18dp"
+                    android:drawableLeft="@drawable/ic_person_black_24dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="37dp"
-                        android:src="@drawable/ic_person_black_24dp">
-
-                    </ImageView>
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:fontFamily="@font/suez_one"
-                        android:text="SignUp as shopkeeper"
-                        android:textColor="#000000"
-                        android:textSize="22dp">
-
-                    </com.google.android.material.textview.MaterialTextView>
-
-                </LinearLayout>
-
-                <view
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="10dp">
-
-                </view>
-            </LinearLayout>
-
-
-
-
-
+                </com.google.android.material.textview.MaterialTextView>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
     </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

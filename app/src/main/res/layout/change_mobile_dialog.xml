@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="420dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="70dp"
+    android:layout_weight="6">
+
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="#fff345"
+        android:layout_width="340dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="40dp"
+        android:layout_marginLeft="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/suez_one"
+                android:text="Update Mobile No."
+                android:textColor="#000000"
+                android:textSize="35dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="50sp"
+                app:cardCornerRadius="15sp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50sp"
+                        android:layout_height="70sp"
+                        android:layout_marginLeft="7sp"
+                        android:layout_marginTop="5sp"
+                        android:src="@drawable/ic_phone_iphone_black_24dp">
+
+                    </ImageView>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/black"
+                        app:hintTextColor="@color/black"
+                        app:boxBackgroundColor="@color/white"
+                        android:layout_margin="5dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Mobile Number"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="60sp"
+                android:layout_gravity="center_horizontal"
+                android:text="Next"
+                android:textSize="15dp"
+                android:fontFamily="@font/suez_one"
+                android:backgroundTint="@color/darkgrey">
+
+            </br.com.simplepass.loadingbutton.customViews.CircularProgressButton>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
